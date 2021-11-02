@@ -1,0 +1,73 @@
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+   body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       font-family: sans-serif;
+       background: url(pexels-김-대정-2734421.jpg);
+       background-size: cover;
+       background-position:center;
+       background-attachment: fixed;
+       background-repeat:no-repeat ;
+       opacity: 0.9;
+   }
+   .calendar{
+       width: 400px;
+       height: auto;
+       background: #fff;
+       box-sizing: border-box;
+       box-shadow: 0 50px 50px rgba(20, 14, 14, 0.7);
+   }
+   .calendar .image{
+       width: 100%;
+       height: 200px;
+       background: url(pexels-daniel-frank-688830.jpg);
+       background-size: cover;
+       padding: 20px;   
+   }
+   .calendar .image h2, h3{
+       padding: 0;
+       margin: 0;
+       color: #fff;
+       text-shadow: 0 3px 3px rgba(0, 0, 0, .4);
+   }
+   .calendar .image h3{
+       font-weight: 500;
+   }
+   .calendar .date{
+       padding: 20px;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+       grid-gap: 15px;
+       font-size: 17px;
+   }
+   .calendar .date div{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 30px;
+       color: #262626;
+   }
+   .calendar .date .day{
+       font-weight: 1200px;
+       font-size: bolder;
+       font-style: oblique;
+       
+   }
+   .calendar .date .day:first-child,
+   .calendar .date .number:nth-child(7n+1){
+       color: #ff685d;
+       font-weight: 700px;
+       
+   }
+   .calendar .date .number.active{
+        background-color: blue; 
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+   }
